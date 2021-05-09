@@ -39,8 +39,10 @@ android {
         exclude 'META-INF/notice'
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/*'
+        exclude 'project.properties'
+        exclude 'META-INF/INDEX.LIST'
 
-        //exclude 'libs/stanford-corenlp-4.2.0.jar'
+        exclude 'jetified-stanford-corenlp-4.2.0'
 
     }
 
@@ -57,7 +59,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // java local libraries
-    implementation files('edu.stanford.nlp.*')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: 'libs/folder1', include: ['*.jar'])
 
     //implementation fileTree(dir: 'libs/stanford-parser-full-2020-11-17', include: ['*.jar'])

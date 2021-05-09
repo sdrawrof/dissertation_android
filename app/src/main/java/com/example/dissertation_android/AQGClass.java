@@ -21,7 +21,8 @@ import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.util.CoreMap;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
-import out.production.dissertation_java.SentenceClass;
+
+import com.example.dissertation_android.SentenceClass;
 
 import java.io.*;
 import java.util.ArrayList;

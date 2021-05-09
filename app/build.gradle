@@ -26,6 +26,25 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/*'
+
+        //exclude 'libs/stanford-corenlp-4.2.0.jar'
+
+    }
+
+
 }
 
 dependencies {
@@ -36,4 +55,14 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // java local libraries
+    implementation files('edu.stanford.nlp.*')
+    implementation fileTree(dir: 'libs/folder1', include: ['*.jar'])
+
+    //implementation fileTree(dir: 'libs/stanford-parser-full-2020-11-17', include: ['*.jar'])
+    //implementation fileTree(dir: 'libs/stanford-tregex-2020-11-17', include: ['*.jar'])
+    //implementation fileTree(dir: 'libs/stanford-corenlp-4.2.0', include: ['*.jar'])
+
 }
+

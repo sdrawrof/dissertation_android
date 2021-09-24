@@ -21,7 +21,7 @@ The Android app is a prototype demonstrating how users can be asked questions ge
 
 ![Android app](app/res/app2.png "Asking Questions to the User")
 
-[Download the android app here](https://drive.google.com/file/d/1wbWUuWVh60SvT9cQZEwZPfWvrpfj3eh5/view?usp=sharing)
+[Download the android app here (requires permission to download applications from the internet to be set to allow on your device)](https://drive.google.com/file/d/1wbWUuWVh60SvT9cQZEwZPfWvrpfj3eh5/view?usp=sharing)
 
 
 The project was written in Java and Android development languages. In order to integrate the Automatic Question Generation system to the app a dedicated server must be set up in order to run a Natural Language Processing pipeline using jar files from Stanford's CoreNLP. This takes the text from the lecture slides and applies syntactic and semantic tags in order for the Automatic Question Generation system to identify how to convert the sentences into questions. In this repository this method is implemented manually using the Stanford CoreNLP libraries. This project was part of my undergraduate dissertation.
